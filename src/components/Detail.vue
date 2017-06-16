@@ -24,8 +24,6 @@
             <label for="" class="col-sm-2 control-label">隶属 Flow</label>
             <div class="col-sm-4">
                <select v-model="tmpRowData.flumeFlow" class="form-control select2" style="width: 100%;" :disabled="formModeRowData == 'view'">
-                <!-- fnFindById(dataFlow, option.value) -->
-                <!-- option.value -->
                   <option v-for="option in optionsFlowObject" :value="fnFindById(dataFlow, option.value)"
                     :selected="fnContitionOfOptionSelectedForFlow(tmpRowData, option)">
                       {{ option.text }}
@@ -33,7 +31,7 @@
                 </select>
             </div>
           </div>
-          <div class="form-group">
+          <!-- <div class="form-group">
             <label for="" class="col-sm-2 control-label">关联 Agent</label>
             <div class="col-sm-4">
                <select v-model="tmpRowData.flumeAgent" class="form-control select2" style="width: 100%;" :disabled="formModeRowData == 'view'">
@@ -55,7 +53,7 @@
             </div>
 
           </div>
-           
+            -->
           <div class="form-group">
             <label class="col-sm-2 control-label">监控端口</label>
 
